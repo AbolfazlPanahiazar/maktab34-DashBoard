@@ -60,8 +60,6 @@ header {
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.2);
   display: flex;
 }
-
-
 /* -- */
 header .header-items .logo {
   width: 23%; /**/
@@ -98,7 +96,7 @@ header .header-items .texts {
   flex-direction: column;
   line-height: 150%;
 }
-header .header-items .texts .top {
+header .header-items .texts .title {
   color: #9e9e9e;
   font-size: 13px;
 }
@@ -125,5 +123,119 @@ header .header-items .texts .inline-texts .four {
 header .header-items .texts .inline-texts .bottom-text {
   color: #9e9e9e;
   font-size: 11px;
+}
+/* //////////////////////////////////////// */
+
+/* side bar */
+aside {
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+/* -- */
+aside .time {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside .time .clock {
+    color: #6256e6;
+    font-size: 1.9em;
+}
+aside .time .date {
+    color: #6c7de5;
+    font-size: 0.7em;
+}
+/* -- */
+aside .developer {
+    width: 100%;
+    height: 11%;
+    padding: 15px 0px;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+}
+aside .developer .avatar {
+    width: 20%;
+    height: auto;
+    margin: 5px;
+}
+aside .developer .avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+aside .developer .texts {
+    width: 50%;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    padding-top: 6px;
+}
+aside .developer .texts .name {
+    font-size: 0.7em;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+aside .developer .texts .job {
+    font-size: 0.6em;
+    color: #aeaeae;
+}
+/* -- */
+aside nav{
+    direction: rtl;
+    width: 100%;
+}
+aside nav ul{
+    width: 100%;
+    height: 250px;
+}
+aside nav ul li{
+    display: flex;
+    justify-content: start;
+    color: #9f9f9f;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 15px;
+}
+aside nav ul li span {
+    padding-right: 10px;
+    font-size: 12px;
+}
+aside nav ul li .nav-icon {
+    font-size: 12px;
+    position: relative;
+    top: 4.5px;
+}
+.sub {
+    margin-top: 15px;
+    font-size: 0.6em;
+    padding-right: 30px;
+}
+.badge {
+    background-color: #f4365c;
+    color: #ffffff;
+    font-size: 9px;
+}
+.left {
+    position: absolute;
+    left: 25px;
+}
+.smaller {
+    font-size: 0.6em;
+}
+.blue {
+    color: #6256e6;
+}
+/* -- */
+aside .logo {
+    position: absolute;
+    bottom: 45px;
+    width: 50px;
 }
 /* //////////////////////////////////////// */
