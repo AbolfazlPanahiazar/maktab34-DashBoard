@@ -16,9 +16,9 @@
   src: url(../fonts/Shabnam-Light.ttf) format("ttf");
   font-weight: lighter;
 }
-/* //////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////// */
 
-/* layout */
+/************************* layout *************************/
 * {
   margin: 0;
   padding: 0;
@@ -40,9 +40,9 @@ aside {
   background-color: #ffffff;
   position: fixed;
 }
-/* //////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////// */
 
-/* header */
+/************************* header *************************/
 header {
   width: 100%;
   height: 100px;
@@ -124,9 +124,9 @@ header .header-items .texts .inline-texts .bottom-text {
   color: #9e9e9e;
   font-size: 11px;
 }
-/* //////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////// */
 
-/* side bar */
+/************************* side bar *************************/
 aside {
     box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -238,4 +238,57 @@ aside .logo {
     bottom: 45px;
     width: 50px;
 }
-/* //////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+/************************* side bar *************************/
+.main-section {
+    padding: 0 1.7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-section .performance {
+    width: 38.5%;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.75% 0.75% 0.75% 0;
+}
+.main-section .blue-board {
+    width: 60%;
+    height: 300px;
+    background: linear-gradient(110deg, #8364e5, #6766e5);
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.75% 0px 0.75% 0.75%;
+}
+.main-section .inbox {
+    width: 38.5%;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.75% 0.75% 0.75% 0;
+}
+.main-section .tickets {
+    width: 60%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.75% 0px 0.75% 0.75%;
+}
+.main-section .news {
+    width: 49.2%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.75% 0.75% 0.75% 0;
+}
+.main-section .encyclopedias {
+    width: 49.2%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+    margin: 0.75% 0px 0.75% 0.75%;
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
