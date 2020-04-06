@@ -1,4 +1,6 @@
-**/js
+all.min.js
+bootstrap.min.js
+jquery-3.4.1.min.js
 **/fonts
 **/images
 bootstrap.min.css
