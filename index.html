@@ -97,6 +97,7 @@
 
         <!-- main section - start-->
         <div class="main-section">
+            
           <div class="performance">
               <div class="header">
                   <select name="selec" id="select">
@@ -108,13 +109,53 @@
                   <div class="header-title">خلاصه عملکرد</div>
               </div>
               <div class="chart">
-                  
+                  <canvas id="bar"></canvas>
               </div>
           </div>
+
           <div class="blue-board">
             <i class="far fa-edit"></i>
           </div>
-          <div class="inbox"></div>
+
+          <div class="inbox">
+            <div class="header">
+            <select name="selec" id="select">
+                <option value="last day">روز گذشته</option>
+                <option value="last week">هفته گذشته</option>
+                <option value="last month">ماه گذشته</option>
+                <option value="last year">سال گذشته</option>
+            </select>
+            <div class="header-title">صندوق پیام</div>
+        </div>
+        <div class="messages-table">
+            <table class="table" dir="rtl">
+                <tr>
+                    <td class="img-td" colspan="3"><img src="./images/person2.jpg" alt="img"></td>
+                    <td>
+                        <div class="from">مصطفی حسینی <span class="badge badge-pill">پیام جدید</span><span class="time">۲ساعت پیش</span></div>
+                        <div class="subject">گزارش گارکرد دورهی هفتم آقای حسینی</div>
+                        <div class="description"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="img-td" colspan="3"><img src="./images/person1.jpg" alt="img"></td>
+                    <td>
+                        <div class="from">سارا محمودی <span class="badge badge-pill">پیام جدید</span><span class="time">۳روز پیش</span></div>
+                        <div class="subject">گزارش گارکرد دورهی ششم خانم محمودی</div>
+                        <div class="description"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="img-td" colspan="3"><img src="./images/person4.jpg" alt="img"></td>
+                    <td>
+                        <div class="from">معین قاسمی<span class="time">۱ماه پیش</span></div>
+                        <div class="subject">گزارش گارکرد دورهی خفتم آقای حسینی</div>
+                        <div class="description"><p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+          </div>
           <div class="tickets"></div>
           <div class="news"></div>
           <div class="encyclopedias"></div>
