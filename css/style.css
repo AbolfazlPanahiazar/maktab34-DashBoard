@@ -30,13 +30,20 @@ body {
 }
 .container {
   background-color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 .dash-board {
   background-color: #f5f5f5;
   padding: 0;
+  width: 85%;
+  position: absolute;
+  left: 0;
 }
 aside {
   height: 100vh;
+  width: 15%;
   background-color: #ffffff;
   position: fixed;
 }
@@ -49,7 +56,6 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0;
 }
 .header-items {
   background-color: aliceblue;
@@ -128,167 +134,176 @@ header .header-items .texts .inline-texts .bottom-text {
 
 /************************* side bar *************************/
 aside {
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* -- */
 aside .time {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 aside .time .clock {
-    color: #6256e6;
-    font-size: 1.9em;
+  color: #6256e6;
+  font-size: 1.9em;
 }
 aside .time .date {
-    color: #6c7de5;
-    font-size: 0.7em;
+  color: #6c7de5;
+  font-size: 0.7em;
 }
 /* -- */
 aside .developer {
-    width: 100%;
-    height: 11%;
-    padding: 15px 0px;
-    direction: rtl;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 11%;
+  padding: 15px 0px;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
 }
 aside .developer .avatar {
-    width: 20%;
-    height: auto;
-    margin: 5px;
+  width: 20%;
+  height: auto;
+  margin: 5px;
 }
 aside .developer .avatar img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 aside .developer .texts {
-    width: 50%;
-    height: auto;
-    margin: 5px;
-    text-align: center;
-    padding-top: 6px;
+  width: 50%;
+  height: auto;
+  margin: 5px;
+  text-align: center;
+  padding-top: 6px;
 }
 aside .developer .texts .name {
-    font-size: 0.7em;
-    margin-bottom: 2px;
-    font-weight: bold;
+  font-size: 0.7em;
+  margin-bottom: 2px;
+  font-weight: bold;
 }
 aside .developer .texts .job {
-    font-size: 0.6em;
-    color: #aeaeae;
+  font-size: 0.6em;
+  color: #aeaeae;
 }
 /* -- */
-aside nav{
-    direction: rtl;
-    width: 100%;
+aside nav {
+  direction: rtl;
+  width: 100%;
 }
-aside nav ul{
-    width: 100%;
-    height: 250px;
+aside nav ul {
+  width: 100%;
+  height: 250px;
 }
-aside nav ul li{
-    display: flex;
-    justify-content: start;
-    color: #9f9f9f;
-    font-weight: 700;
-    width: 100%;
-    margin-top: 15px;
+aside nav ul li {
+  display: flex;
+  justify-content: start;
+  color: #9f9f9f;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 15px;
 }
 aside nav ul li span {
-    padding-right: 10px;
-    font-size: 12px;
+  padding-right: 10px;
+  font-size: 12px;
 }
 aside nav ul li .nav-icon {
-    font-size: 12px;
-    position: relative;
-    top: 4.5px;
+  font-size: 12px;
+  position: relative;
+  top: 4.5px;
 }
 .sub {
-    margin-top: 15px;
-    font-size: 0.6em;
-    padding-right: 30px;
+  margin-top: 15px;
+  font-size: 0.6em;
+  padding-right: 30px;
 }
 .badge {
-    background-color: #f4365c;
-    color: #ffffff;
-    font-size: 9px;
+  background-color: #f4365c;
+  color: #ffffff;
+  font-size: 9px;
 }
 .left {
-    position: absolute;
-    left: 25px;
+  position: absolute;
+  left: 25px;
 }
 .smaller {
-    font-size: 0.6em;
+  font-size: 0.6em;
 }
 .blue {
-    color: #6256e6;
+  color: #6256e6;
 }
 /* -- */
 aside .logo {
-    position: absolute;
-    bottom: 45px;
-    width: 50px;
+  position: absolute;
+  bottom: 45px;
+  width: 50px;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
 
 /************************* side bar *************************/
 .main-section {
-    padding: 0 1.7%;
-    display: flex;
-    flex-wrap: wrap;
+  padding: 0 1.7%;
+  display: flex;
+  flex-wrap: wrap;
 }
+/* -- */
 .main-section .performance {
-    width: 38.5%;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.75% 0.75% 0.75% 0;
+  width: 38.5%;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  margin: 0.75% 0.75% 0.75% 0;
 }
+/* -- */
 .main-section .blue-board {
-    width: 60%;
-    height: 300px;
-    background: linear-gradient(110deg, #8364e5, #6766e5);
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.75% 0px 0.75% 0.75%;
+  width: 60%;
+  height: 300px;
+  background: linear-gradient(110deg, #8364e5, #6766e5);
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  margin: 0.75% 0px 0.75% 0.75%;
+  padding: 12px 22px;
+  color: #ffffff;
 }
+/* -- */
 .main-section .inbox {
-    width: 38.5%;
-    height: 300px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.75% 0.75% 0.75% 0;
+  width: 38.5%;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  margin: 0.75% 0.75% 0.75% 0;
 }
+/* -- */
 .main-section .tickets {
-    width: 60%;
-    height: 300px;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.75% 0px 0.75% 0.75%;
+  width: 60%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  margin: 0.75% 0px 0.75% 0.75%;
+  background-color: #ffffff;
 }
+/* -- */
 .main-section .news {
-    width: 49.2%;
-    height: 300px;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.75% 0.75% 0.75% 0;
+  width: 49.2%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  margin: 0.75% 0.75% 0.75% 0;
+  background-color: #ffffff;
 }
+/* -- */
 .main-section .encyclopedias {
-    width: 49.2%;
-    height: 300px;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.75% 0px 0.75% 0.75%;
+  width: 49.2%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  margin: 0.75% 0px 0.75% 0.75%;
+  background-color: #ffffff;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
