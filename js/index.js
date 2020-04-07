@@ -61,3 +61,16 @@ var myChart = new Chart(document.getElementById("line-chart"), {
   }
 });
 
+
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 15) {
+    $('.search').fadeIn();
+  } else {
+    $('.search').fadeOut();
+  }
+});
+
+var new_width = $('.dash-board').width();
+$('.search').width(new_width); 

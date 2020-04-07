@@ -773,3 +773,51 @@ aside .logo {
   font-weight: 800;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
+/************************** search -section **************************/
+.dash-board .search {
+  height: 50px;
+  background-color: #ffffff;
+  position: fixed;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
+  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #ccccd8;
+}
+.dash-board .search .icons {
+  display: flex;
+  color: #ccccd8;
+  font-size: 19px;
+}
+.dash-board .search .icons .bell {
+  margin-right: 25px;
+  position: relative;
+}
+.dash-board .search .icons .messages {
+  margin-right: 25px;
+  position: relative;
+}
+.dash-board .search .icons .badge-pill {
+  background-color: #f5375b;
+  color: #ffffff;
+  font-size: 10px;
+  position: absolute;
+  top: -3px;
+  left: 10px;
+}
+.dash-board .search .search-input input {
+  width: 300px;
+  direction: rtl;
+  border: none;
+}
+.dash-board .search .search-input input::placeholder {
+  color: #ccccd8;
+}
+.dash-board .search .search-input input:focus {
+  outline: none;
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
