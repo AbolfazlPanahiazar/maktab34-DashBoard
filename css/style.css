@@ -301,7 +301,7 @@ aside .logo {
 .performance .orange {
   color: #f39c1b;
 }
-/* -- */
+/* --------------------------------------------------------------------------------- */
 .main-section .blue-board {
   width: 60%;
   height: 300px;
@@ -312,7 +312,7 @@ aside .logo {
   padding: 12px 22px;
   color: #ffffff;
 }
-/* -- */
+/* --------------------------------------------------------------------------------- */
 .main-section .inbox {
   width: 38.5%;
   height: 300px;
@@ -402,7 +402,7 @@ aside .logo {
   float: left;
   padding: 6px 19px;
 }
-/* -- */
+/* --------------------------------------------------------------------------------- */
 .main-section .tickets {
   width: 60%;
   height: 300px;
@@ -538,7 +538,7 @@ aside .logo {
   width: 10px;
   margin-left: 5px;
 }
-/* -- */
+/* --------------------------------------------------------------------------------- */
 .main-section .news {
   width: 49.2%;
   height: 300px;
@@ -547,7 +547,115 @@ aside .logo {
   margin: 0.75% 0.75% 0.75% 0;
   background-color: #ffffff;
 }
-/* -- */
+.news .header {
+  width: 100%;
+  height: 16.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-weight: bolder;
+}
+.news .header .header-title {
+  direction: rtl;
+  display: flex;
+  font-size: 11px;
+  height: 100%;
+}
+.news .header .header-tabs {
+  margin-left: 11px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+}
+.news .header .badge {
+  background-color: #f0f0f0;
+  color: #9e9e9e;
+  margin-right: 2px;
+}
+.news .header .selected {
+  border-bottom: 2px solid #6257e4;
+  color: #020010;
+}
+.news .header select {
+  direction: rtl;
+  font-size: 11px;
+  border-radius: 5px;
+  padding: 3px 1px;
+}
+.news .news-table {
+  width: 100%;
+  height: 83.5%;
+}
+.news .news-table table {
+  width: 100%;
+  height: 100%;
+}
+.news .news-table table tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+  border-top: 0.5px solid #dbd9d9;
+  transition: all 0.3s;
+}
+.news .news-table table tr:hover {
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.5);
+}
+.news .news-table table .top-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f888;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 10px 10px;
+  border: none;
+}
+.news .work-td {
+  width: 35%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news .work-td .label {
+  text-align: right;
+  font-size: 10px;
+  font-weight: 800;
+}
+.news .sub-label {
+  font-size: 8px;
+  font-weight: 800;
+}
+.news .avatar-td {
+  width: 35%;
+  display: flex;
+  text-align: right;
+  align-items: center;
+}
+.news .avatar {
+  width: 31px;
+  border-radius: 50%;
+}
+.news .avatar-text {
+  font-size: 10px;
+  color: #9e9e9e;
+  font-weight: 900;
+  margin-right: 4px;
+}
+.news .importacne-td {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.news .importacne-td span {
+  font-size: 12px;
+  color: #9e9e9e;
+  font-weight: 800;
+}
+/* --------------------------------------------------------------------------------- */
 .main-section .encyclopedias {
   width: 49.2%;
   height: 300px;
@@ -555,5 +663,113 @@ aside .logo {
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
   margin: 0.75% 0px 0.75% 0.75%;
   background-color: #ffffff;
+}
+.encyclopedias .header {
+  width: 100%;
+  height: 16.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-weight: bolder;
+}
+.encyclopedias .header .header-title {
+  direction: rtl;
+  display: flex;
+  font-size: 11px;
+  height: 100%;
+}
+.encyclopedias .header .header-tabs {
+  margin-left: 11px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+}
+.encyclopedias .header .badge {
+  background-color: #f0f0f0;
+  color: #9e9e9e;
+  margin-right: 2px;
+}
+.encyclopedias .header .selected {
+  border-bottom: 2px solid #6257e4;
+  color: #020010;
+}
+.encyclopedias .header select {
+  direction: rtl;
+  font-size: 11px;
+  border-radius: 5px;
+  padding: 3px 1px;
+}
+.encyclopedias .news-table {
+  width: 100%;
+  height: 83.5%;
+}
+.encyclopedias .encyclopedias-table table {
+  width: 100%;
+  height: 100%;
+}
+.encyclopedias .encyclopedias-table table tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px;
+  border-top: 0.5px solid #dbd9d9;
+  transition: all 0.3s;
+}
+.encyclopedias .encyclopedias-table table tr:hover {
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.5);
+}
+.encyclopedias .encyclopedias-table table .top-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f888;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 10px 10px;
+  border: none;
+}
+.encyclopedias .work-td {
+  width: 35%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.encyclopedias .work-td .label {
+  text-align: right;
+  font-size: 10px;
+  font-weight: 800;
+}
+.encyclopedias .sub-label {
+  font-size: 8px;
+  font-weight: 800;
+}
+.encyclopedias .avatar-td {
+  width: 35%;
+  display: flex;
+  text-align: right;
+  align-items: center;
+}
+.encyclopedias .avatar {
+  width: 31px;
+  border-radius: 50%;
+}
+.encyclopedias .avatar-text {
+  font-size: 10px;
+  color: #9e9e9e;
+  font-weight: 900;
+  margin-right: 4px;
+}
+.encyclopedias .importacne-td {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.encyclopedias .importacne-td span {
+  font-size: 12px;
+  color: #9e9e9e;
+  font-weight: 800;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
