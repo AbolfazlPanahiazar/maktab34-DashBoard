@@ -15,7 +15,6 @@
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/all.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -108,7 +107,12 @@
               <div class="header-title">خلاصه عملکرد</div>
             </div>
             <div class="chart">
-              <canvas id="bar"></canvas>
+              <canvas id="line-chart" width="800" height="450"></canvas>
+              <div class="legends">
+                <span>خبر <i class="fas fa-circle"></i></span>
+                <span>دانشنامه <i class="fas fa-circle"></i></span>
+                <span class="orange">تیکت  <i class="fas fa-circle"></i></span>
+              </div>
             </div>
           </div>
 
@@ -218,204 +222,203 @@
             <div class="tickets-table">
               <table  dir="rtl">
                 <tr class="top-row">
-                  <td></td>
-                  <td>عنوان</td>
-                  <td></td>
-                  <td>ایجاد شده</td>
-                  <td>الویت</td>
-                  <td>آخرین پاسخ دهنده</td>
+                  <td class="bar-td"></td>
+                  <td class="work-td">عنوان</td>
+                  <td class="avatar-td">ایجاد شده</td>
+                  <td class="importacne-td">الویت</td>
+                  <td class="avatar-td">آخرین پاسخ دهنده</td>
                 </tr>
                 <tr>
-                    <td class="bar-td">
-                      <img class="bar" src="./images/bluebar.jpg" alt="blurbar" />
-                    </td>
-                    <td>
-                      <div class="label"><span>تعویض کارت صدای سیستم</span></div>
-                      <div class="work-td">
-                        <img src="./images/graysquare.jpg" alt="gray square" />
-                        <span class="sub-label">عمومی</span>
-                        <span class="sub-label blue">
-                          <i class="far fa-tag"></i>
-                          سند‍، مدیریت، سازمانی
-                        </span>
-                      </div>
-                    </td>
-                    <td class="avatar-td">
-                      <div>
-                        <img
-                          class="avatar"
-                          src="./images/pesron3.jpg"
-                          alt="avatar"
-                        />
-                      </div>
-                      <div>
-                        <div class="avatar-name">ساره حسینی</div>
-                        <div class="avatar-time">۳ روز پیش</div>
-                      </div>
-                    </td>
-                    <td class="importacne-td">
-                      <img src="./images/low.jpg" alt="low" />
-                      کم
-                    </td>
-                    <td class="avatar-td">
-                      <div><img class="avatar" src="./images/person6.jpg" alt="avatar" /></div>
-                      <div>
-                        <div class="avatar-name">علی محمودی</div>
-                        <div class="avatar-time">۳ روز پیش</div>
-                      </div>
-                    </td>
+                  <td class="bar-td">
+                    <img class="bar" src="./images/bluebar.jpg" alt="blurbar" />
+                  </td>
+                  <td class="work-td">
+                    <div class="label"><span>تعویض کارت صدای سیستم</span></div>
+                    <div>
+                      <img src="./images/graysquare.jpg" alt="gray square" />
+                      <span class="sub-label">عمومی</span>
+                      <span class="sub-label blue">
+                        <i class="far fa-tag"></i>
+                        سند‍، مدیریت، سازمانی
+                      </span>
+                    </div>
+                  </td>
+                  <td class="avatar-td">
+                    <div>
+                      <img
+                        class="avatar"
+                        src="./images/pesron3.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                    <div>
+                      <div class="avatar-name">ساره حسینی</div>
+                      <div class="avatar-time">۳ روز پیش</div>
+                    </div>
+                  </td>
+                  <td class="importacne-td">
+                    <img src="./images/low.jpg" alt="low" />
+                    <span>کم</span>
+                  </td>
+                  <td class="avatar-td">
+                    <div><img class="avatar" src="./images/person6.jpg" alt="avatar" /></div>
+                    <div>
+                      <div class="avatar-name">علی محمودی</div>
+                      <div class="avatar-time">۳ روز پیش</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                    <td class="bar-td">
-                      <img class="bar" src="./images/greenbar.jpg" alt="greenbarbar" />
-                    </td>
-                    <td>
-                      <div class="label"><span>درخواست تلفن  سرور اتاق سو...</span></div>
-                      <div class="work-td">
-                        <img src="./images/graysquare.jpg" alt="gray square" />
-                        <span class="sub-label">انتقاد و پیشنهاد</span>
-                        <span class="sub-label blue">
-                          <i class="far fa-tag"></i>
-                          سند‍،  سازمانی
-                        </span>
-                      </div>
-                    </td>
-                    <td class="avatar-td">
-                      <div>
-                        <img
-                          class="avatar"
-                          src="./images/person2.jpg"
-                          alt="avatar"
-                        />
-                      </div>
-                      <div>
-                        <div class="avatar-name">علی مولایی</div>
-                        <div class="avatar-time">۱۰ روز پیش</div>
-                      </div>
-                    </td>
-                    <td class="importacne-td">
-                      <img src="./images/imediate.jpg" alt="imediate" />
-                      فوری
-                    </td>
-                    <td class="avatar-td">
-                      <div><img class="avatar" src="./images/person5.jpg" alt="avatar" /></div>
-                      <div>
-                        <div class="avatar-name">مهدیه قربانی</div>
-                        <div class="avatar-time">۱۰ روز پیش</div>
-                      </div>
-                    </td>
+                  <td class="bar-td">
+                    <img class="bar" src="./images/greenbar.jpg" alt="greenbar" />
+                  </td>
+                  <td class="work-td">
+                    <div class="label"><span>درخواست تلفن برای واحد سرور اتاق...</span></div>
+                    <div>
+                      <img src="./images/graysquare.jpg" alt="gray square" />
+                      <span class="sub-label">انتفاد و پیشنهاد</span>
+                      <span class="sub-label blue">
+                        <i class="far fa-tag"></i>
+                        سند‍، مدیریت
+                      </span>
+                    </div>
+                  </td>
+                  <td class="avatar-td">
+                    <div>
+                      <img
+                        class="avatar"
+                        src="./images/person2.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                    <div>
+                      <div class="avatar-name">محمد دوستی</div>
+                      <div class="avatar-time">۱۰ روز پیش</div>
+                    </div>
+                  </td>
+                  <td class="importacne-td">
+                    <img src="./images/imediate.jpg" alt="imediate" />
+                    <span>فوری</span>
+                  </td>
+                  <td class="avatar-td">
+                    <div><img class="avatar" src="./images/person5.jpg" alt="avatar" /></div>
+                    <div>
+                      <div class="avatar-name">نازنین حامدی</div>
+                      <div class="avatar-time">۱۰ روز پیش</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                    <td class="bar-td">
-                      <img class="bar" src="./images/bluebar.jpg" alt="blurbar" />
-                    </td>
-                    <td>
-                      <div class="label"><span>تعویض هدفون سیستم  دوم</span></div>
-                      <div class="work-td">
-                        <img src="./images/graysquare.jpg" alt="gray square" />
-                        <span class="sub-label">عمومی</span>
-                      </div>
-                    </td>
-                    <td class="avatar-td">
-                      <div>
-                        <img
-                          class="avatar"
-                          src="./images/person1.jpg"
-                          alt="avatar"
-                        />
-                      </div>
-                      <div>
-                        <div class="avatar-name">فاطمه بشیری</div>
-                        <div class="avatar-time">۱۸ روز پیش</div>
-                      </div>
-                    </td>
-                    <td class="importacne-td">
-                      <img src="./images/medium.jpg" alt="medium" />
-                      متوسط
-                    </td>
-                    <td class="avatar-td">
-                      <div><img class="avatar" src="./images/person2.jpg" alt="avatar" /></div>
-                      <div>
-                        <div class="avatar-name">محمد    امیری</div>
-                        <div class="avatar-time">۱۸ روز پیش</div>
-                      </div>
-                    </td>
+                  <td class="bar-td">
+                    <img class="bar" src="./images/bluebar.jpg" alt="bluebar" />
+                  </td>
+                  <td class="work-td">
+                    <div class="label"><span>تعویض هدفون سیستم طبقه دوم</span></div>
+                    <div>
+                      <img src="./images/graysquare.jpg" alt="gray square" />
+                      <span class="sub-label">عمومی</span>
+                    </div>
+                  </td>
+                  <td class="avatar-td">
+                    <div>
+                      <img
+                        class="avatar"
+                        src="./images/person1.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                    <div>
+                      <div class="avatar-name">مهدیه مرجانی</div>
+                      <div class="avatar-time">۱۸ روز پیش</div>
+                    </div>
+                  </td>
+                  <td class="importacne-td">
+                    <img src="./images/medium.jpg" alt="imediate" />
+                    <span>متوسط</span>
+                  </td>
+                  <td class="avatar-td">
+                    <div><img class="avatar" src="./images/person4.jpg" alt="avatar" /></div>
+                    <div>
+                      <div class="avatar-name">فرهاد مروانی</div>
+                      <div class="avatar-time">۱۸ روز پیش</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                    <td class="bar-td">
-                      <img class="bar" src="./images/greenbar.jpg" alt="greenbar" />
-                    </td>
-                    <td>
-                      <div class="label"><span>تعویض کارت صدای سیستم</span></div>
-                      <div class="work-td">
-                        <img src="./images/graysquare.jpg" alt="gray square" />
-                        <span class="sub-label">عمومی</span>
-                        <span class="sub-label blue">
-                          <i class="far fa-tag"></i>
-                          سند‍، مدیریت، سازمانی
-                        </span>
-                      </div>
-                    </td>
-                    <td class="avatar-td">
-                      <div>
-                        <img
-                          class="avatar"
-                          src="./images/pesron3.jpg"
-                          alt="avatar"
-                        />
-                      </div>
-                      <div>
-                        <div class="avatar-name">ساره حسینی</div>
-                        <div class="avatar-time">۳ روز پیش</div>
-                      </div>
-                    </td>
-                    <td class="importacne-td">
-                      <img src="./images/low.jpg" alt="low" />
-                      کم
-                    </td>
-                    <td class="avatar-td">
-                      <div><img class="avatar" src="./images/person6.jpg" alt="avatar" /></div>
-                      <div>
-                        <div class="avatar-name">علی محمودی</div>
-                        <div class="avatar-time">۳ روز پیش</div>
-                      </div>
-                    </td>
+                  <td class="bar-td">
+                    <img class="bar" src="./images/greenbar.jpg" alt="greenbar" />
+                  </td>
+                  <td class="work-td">
+                    <div class="label"><span>مشکل در نصب ویندوز و برنامه کاربردی</span></div>
+                    <div>
+                      <img src="./images/graysquare.jpg" alt="gray square" />
+                      <span class="sub-label">انتقاد و پیشنهاد</span>
+                    </div>
+                  </td>
+                  <td class="avatar-td">
+                    <div>
+                      <img
+                        class="avatar"
+                        src="./images/person6.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                    <div>
+                      <div class="avatar-name">ابوالفضل مرتضوی</div>
+                      <div class="avatar-time">۲۰ روز پیش</div>
+                    </div>
+                  </td>
+                  <td class="importacne-td">
+                    <img src="./images/low.jpg" alt="low" />
+                    <span>کم</span>
+                  </td>
+                  <td class="avatar-td">
+                    <div><img class="avatar" src="./images/pesron3.jpg" alt="avatar" /></div>
+                    <div>
+                      <div class="avatar-name">فاطمه فرهانی</div>
+                      <div class="avatar-time">۲۰ روز پیش</div>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                    <td class="bar-td">
-                      <img class="bar" src="./images/bluebar.jpg" alt="blurbar" />
-                    </td>
-                    <td>
-                      <div class="label"><span>تعویض کارت صدای سیستم</span></div>
-                      <div class="work-td">
-                        <img src="./images/graysquare.jpg" alt="gray square" />
-                        <span class="sub-label">عمومی</span>
-                      </div>
-                    </td>
-                    <td class="avatar-td">
-                      <div>
-                        <img
-                          class="avatar"
-                          src="./images/pesron3.jpg"
-                          alt="avatar"
-                        />
-                      </div>
-                      <div>
-                        <div class="avatar-name">ساره حسینی</div>
-                        <div class="avatar-time">۳ روز پیش</div>
-                      </div>
-                    </td>
-                    <td class="importacne-td">
-                      <img src="./images/low.jpg" alt="low" />
-                      کم
-                    </td>
-                    <td class="avatar-td">
-                      <div><img class="avatar" src="./images/person6.jpg" alt="avatar" /></div>
-                      <div>
-                        <div class="avatar-name">علی محمودی</div>
-                        <div class="avatar-time">۳ روز پیش</div>
-                      </div>
-                    </td>
+                  <td class="bar-td">
+                    <img class="bar" src="./images/bluebar.jpg" alt="blurbar" />
+                  </td>
+                  <td class="work-td">
+                    <div class="label"><span>خراب شدن صندلی مربوط به میز</span></div>
+                    <div>
+                      <img src="./images/graysquare.jpg" alt="gray square" />
+                      <span class="sub-label">عمومی</span>
+                      <span class="sub-label blue">
+                        <i class="far fa-tag"></i>
+                        سند‍، مدیریت، سازمانی
+                      </span>
+                    </div>
+                  </td>
+                  <td class="avatar-td">
+                    <div>
+                      <img
+                        class="avatar"
+                        src="./images/person5.jpg"
+                        alt="avatar"
+                      />
+                    </div>
+                    <div>
+                      <div class="avatar-name">ساره حسینی</div>
+                      <div class="avatar-time">۱ ماه پیش</div>
+                    </div>
+                  </td>
+                  <td class="importacne-td">
+                    <img src="./images/much.jpg" alt="much" />
+                    <span>زیاد</span>
+                  </td>
+                  <td class="avatar-td">
+                    <div><img class="avatar" src="./images/person2.jpg" alt="avatar" /></div>
+                    <div>
+                      <div class="avatar-name">علی محمودی</div>
+                      <div class="avatar-time">۱ ماه پیش</div>
+                    </div>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -486,5 +489,6 @@
       </aside>
       <!-- side bar - start -->
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
