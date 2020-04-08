@@ -44,6 +44,7 @@ aside {
   height: 100vh;
   background-color: #ffffff;
   position: fixed;
+  z-index: 7;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
 
@@ -63,31 +64,125 @@ header {
   border-radius: 5px;
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.2);
   display: flex;
+  position: relative;
 }
 /* -- */
 header .header-items .logo {
-  width: 23%; /**/
+  width: 23%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px 0 0 5px;
+  position: absolute;
+  z-index: 4;
+  transition: all 0.4s;
 }
 header .logo img {
-  width: 75%;
+  width: 45px;
   height: auto;
+  position: absolute;
+  left: 3px;
 }
 header .news .logo {
-  background: linear-gradient(0deg, #607dfd , #22c3f7 );
+  background: linear-gradient(0deg, #607dfd, #22c3f7);
+}
+.news:hover .logo,
+.news.hover .logo {
+  width: 100%;
+  border-radius: 5px;
+}
+.news:hover .texts .title,
+.news.hover .texts .title {
+  color: #ffffff;
+}
+.news:hover .texts .middle,
+.news.hover .texts .middle {
+  color: #ffffff;
+}
+.news:hover .texts .inline-texts .bottom-number,
+.news.hover .texts .inline-texts .bottom-number {
+  color: #ffffff;
+}
+.news:hover .texts .inline-texts .bottom-text,
+.news.hover .texts .inline-texts .bottom-text {
+  color: #ffffff;
 }
 header .diploma .logo {
   background: linear-gradient(0deg, #ed4552, #f3477f);
 }
+.diploma:hover .logo,
+.diploma.hover .logo {
+  width: 100%;
+  border-radius: 5px;
+}
+.diploma:hover .texts .title,
+.diploma.hover .texts .title {
+  color: #ffffff;
+}
+.diploma:hover .texts .middle,
+.diploma.hover .texts .middle {
+  color: #ffffff;
+}
+.diploma:hover .texts .inline-texts .bottom-number,
+.diploma.hover .texts .inline-texts .bottom-number {
+  color: #ffffff;
+}
+.diploma:hover .texts .inline-texts .bottom-text,
+.diploma.hover .texts .inline-texts .bottom-text {
+  color: #ffffff;
+}
 header .tickets .logo {
   background: linear-gradient(0deg, #f09b1c, #fec53a);
 }
+.tickets:hover .logo,
+.tickets.hover .logo {
+  width: 100%;
+  border-radius: 5px;
+}
+.tickets:hover .texts .title,
+.tickets.hover .texts .title {
+  color: #ffffff;
+}
+.tickets:hover .texts .middle,
+.tickets.hover .texts .middle {
+  color: #ffffff;
+}
+.tickets:hover .texts .inline-texts .bottom-number,
+.tickets.hover .texts .inline-texts .bottom-number {
+  color: #ffffff;
+}
+.tickets:hover .texts .inline-texts .bottom-text,
+.tickets.hover .texts .inline-texts .bottom-text {
+  color: #ffffff;
+}
 header .users .logo {
   background: linear-gradient(0deg, #6071e3, #8160e5);
+}
+.users:hover .logo,
+.users.hover .logo {
+  width: 100%;
+  border-radius: 5px;
+}
+.users:hover .texts .title,
+.users.hover .texts .title {
+  color: #ffffff;
+}
+.users:hover .texts .middle,
+.users.hover .texts .middle {
+  color: #ffffff;
+}
+.users:hover .texts .middle,
+.users.hover .texts .middle {
+  color: #ffffff;
+}
+.users:hover .texts .inline-texts .bottom-number,
+.users.hover .texts .inline-texts .bottom-number {
+  color: #ffffff;
+}
+.users:hover .texts .inline-texts .bottom-text,
+.users.hover .texts .inline-texts .bottom-text {
+  color: #ffffff;
 }
 /* -- */
 header .header-items .texts {
@@ -99,18 +194,24 @@ header .header-items .texts {
   align-items: end;
   flex-direction: column;
   line-height: 150%;
+  position: absolute;
+  right: 0;
+  z-index: 5;
 }
 header .header-items .texts .title {
   color: #9e9e9e;
   font-size: 13px;
+  transition: all 0.4s;
 }
 header .header-items .texts .middle {
   font-size: 100%;
   font-weight: 600;
+  transition: all 0.4s;
 }
 header .header-items .texts .inline-texts .bottom-number {
   font-size: 10px;
   font-weight: 800;
+  transition: all 0.4s;
 }
 header .header-items .texts .inline-texts .one {
   color: #e53a33;
@@ -127,6 +228,7 @@ header .header-items .texts .inline-texts .four {
 header .header-items .texts .inline-texts .bottom-text {
   color: #9e9e9e;
   font-size: 11px;
+  transition: all 0.4s;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
 
@@ -786,6 +888,7 @@ aside .logo {
   padding-left: 25px;
   padding-right: 25px;
   color: #ccccd8;
+  z-index: 6;
 }
 .dash-board .search .icons {
   display: flex;
