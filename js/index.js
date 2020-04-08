@@ -49,6 +49,11 @@ var myChart = new Chart(document.getElementById("line-chart"), {
           min:0,
           max: 50,
           stepSize: 10
+        },
+        scaleLabel: {
+          display: true,
+          labelString: 'تعداد',
+          fontFamily: 'Shabnam'
         }
       }]
     },
@@ -62,15 +67,16 @@ var myChart = new Chart(document.getElementById("line-chart"), {
 });
 
 
-
+$('.search').fadeOut();
 $(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y > 15) {
+  if (y > 10) {
     $('.search').fadeIn();
   } else {
     $('.search').fadeOut();
   }
 });
 
-var new_width = $('.dash-board').width();
-$('.search').width(new_width); 
+
+var parentwidth = $(".search-width").width();      
+$(".search").toggleClass("fixed").width(parentwidth);   

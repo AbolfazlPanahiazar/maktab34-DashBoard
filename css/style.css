@@ -78,7 +78,7 @@ header .logo img {
   height: auto;
 }
 header .news .logo {
-  background: linear-gradient(0deg, #607dfd, #22c3f7);
+  background: linear-gradient(0deg, #607dfd , #22c3f7 );
 }
 header .diploma .logo {
   background: linear-gradient(0deg, #ed4552, #f3477f);
@@ -773,13 +773,12 @@ aside .logo {
   font-weight: 800;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
-/************************** search -section **************************/
+/************************** search - section **************************/
 .dash-board .search {
   height: 50px;
   background-color: #ffffff;
   position: fixed;
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.3);
-  display: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
